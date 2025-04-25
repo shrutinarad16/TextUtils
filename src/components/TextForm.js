@@ -5,16 +5,19 @@ export default function TextForm(props) {
     console.log("Uppercase was clicked" + text);
     let newText = text.toUpperCase();
     setText(newText);
+    props.showAlert("Converted to UpperCase", "success");
   };
   const handleLowerClick = () => {
     console.log("Lowercase was clicked" + text);
     let LowerText = text.toLowerCase();
     setText(LowerText);
+    props.showAlert("Converted to LowerCase", "success");
   };
   const handleClearText = () => {
     console.log("Clear Text was clicked");
     let clearText = text.replace(/./g, "");
     setText(clearText);
+    props.showAlert("Text Cleared", "success");
   };
   const handleOnChange = (event) => {
     console.log("On Change");
@@ -26,12 +29,13 @@ export default function TextForm(props) {
     text.select();
     //text.setSelectionRange(0, 9999);
     navigator.clipboard.writeText(text.value);
-    alert("Text Copied");
+    props.showAlert("Copied to Clipboard", "success");
   };
   const handleExtraSpaces = () => {
     console.log("Extra spaces were clicked");
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "));
+    props.showAlert("Removed Extra Spaces", "success");
   };
 
   const [text, setText] = useState("");
@@ -43,7 +47,7 @@ export default function TextForm(props) {
           <textarea
             className="form-control"
             value={text}
-            onChange={handleOnChange} style={{backgroundColor: props.mode === 'light' ? 'white' : 'grey', color: props.mode === 'dark' ? 'white' : '#042743'}}
+            onChange={handleOnChange} style={{backgroundColor: props.mode === 'light' ? 'white' : '#042743', color: props.mode === 'dark' ? 'white' : '#042743'}}
             id="myBox"
             rows="11"
           ></textarea>
