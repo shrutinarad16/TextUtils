@@ -22,11 +22,24 @@ function App() {
     setTimeout(() => {
       setAlert(null);
     }, 2000);
-  };
-  const toggleMode = () => {
+  }
+
+  const removeBodyClasses=()=>{
+    document.body.classList.remove("bg-light");
+    document.body.classList.remove("bg-dark");
+    document.body.classList.remove("bg-primary");
+    document.body.classList.remove("bg-success");
+    document.body.classList.remove("bg-danger");
+    document.body.classList.remove("bg-warning");
+    document.body.classList.remove("bg-dark");
+  }
+  const toggleMode = (cls) => {
+    removeBodyClasses();
+    console.log(cls);
+    document.body.classList.add("bg-" + cls);
     if (mode === "dark") {
       setMode("light");
-      document.body.style.backgroundColor = "white";
+      document.body.style.backgroundColor = "#eae1e1";
       showAlert("Light mode has been enabled", "success");
       document.title = "TextUtils - Light Mode";
       // setInterval(() => {
