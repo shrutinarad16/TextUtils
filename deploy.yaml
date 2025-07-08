@@ -1,0 +1,65 @@
+
+---
+
+## ⚙️ How It Works
+
+1. **Navbar** - Contains theme toggles and page links.
+2. **Alert** - Shows temporary alerts like "Dark Mode Enabled".
+3. **TextForm** - Input area to enter and process text.
+4. **About** - Shows description of app features.
+5. **Router** - Routes between home and about pages.
+6. **Dynamic Title** - Updates browser tab title on mode change.
+
+---
+
+## 🎯 Use Cases
+
+- Content writing assistance
+- Copyediting & proofreading
+- Word/character limitation for essays, tweets, etc.
+- Text normalization for programming
+
+---
+
+## 🧠 What I Learned
+
+- 📌 Deep understanding of `useState()` and conditional rendering
+- 🎨 Applied Bootstrap classes dynamically using JavaScript
+- 🌐 Routing with `react-router-dom` for real-world SPAs
+- 🧹 Clean component structuring and prop-drilling
+- 🔔 Implemented custom alert system with auto-dismiss
+
+---
+
+## 🪪 Author
+
+**Shruti Narad**  
+🔗 [LinkedIn](https://www.linkedin.com/in/shrutinarad16)  
+📧 shrutinarad16@gmail.com
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT)
+
+---
+
+## 💡 Future Enhancements
+
+- 🔍 Add Text-to-Speech and Speech-to-Text
+- 🌐 Internationalization (multi-language support)
+- 🗂 Save & export text files
+- 💾 LocalStorage for theme persistence
+
+---
+
+## 💬 HR & CEO Note
+
+This project is not just a React demo—it's a showcase of clean code, scalable UI patterns, and real-world utility development.  
+It reflects not only my grasp of modern front-end tech but also user-first design thinking, modular architecture, and attention to UI/UX detail.
+
+I'm excited to bring this same dedication to your organization.
+
+---
+
